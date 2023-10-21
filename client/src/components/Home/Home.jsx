@@ -174,7 +174,7 @@ export const Home = () => {
               return (
                 <div
                   key={recipe._id}
-                  className="bg-white p-4 shadow-lg rounded-lg w-4/5 md:w-full"
+                  className="bg-white p-4 shadow-lg rounded-lg w-11/12 md:w-full"
                 >
                   <div className="flex justify-between mb-4">
                     <button
