@@ -42,7 +42,7 @@ export const Home = () => {
         }
       );
       setRecipes(response.data.allRecipes);
-     
+
       setIsLoading(false);
     } catch (err) {
       console.log(err);
@@ -177,17 +177,22 @@ export const Home = () => {
                   className="bg-white p-4 shadow-lg rounded-lg w-11/12 md:w-full"
                 >
                   <div className="flex justify-between mb-4">
-                    <button
-                      onClick={() => toggleFavorite(recipe._id)}
-                      className={`px-4 py-2 text-3xl rounded ${isRecipeFavorite(recipe._id) ? "text-red-500" : "text-blue-500"
-                        }`}
-                    >
-                      <FontAwesomeIcon className="shadow-lg hover:scale-110 transition-transform transform" icon={faHeart} />
-                      <div className="flex text-xl">
+                    {user ? (
+                      <button
+                        onClick={() => toggleFavorite(recipe._id)}
+                        className={`px-4 py-2 text-3xl rounded ${isRecipeFavorite(recipe._id) ? "text-red-500" : "text-blue-500"
+                          }`}
+                      >
+                        <FontAwesomeIcon className="shadow-lg hover:scale-110 transition-transform transform" icon={faHeart} />
+                        <div className="flex text-xl">
 
-                        
-                      </div>
-                    </button>
+
+                        </div>
+                      </button>
+                    ) : (
+                      <div></div>
+                    )}
+                    
 
 
                     <div className="text-center">
