@@ -7,6 +7,7 @@ import { Landing } from "./pages/Home/Landing";
 import Recipe from "./pages/CreateRecipe/Recipe";
 import FavRecipe from "./pages/CreateRecipe/FavRecipe";
 import UpdateRecipe from "./components/Recipe/UpdateRecipe";
+import MyRecipes from "./components/Recipe/MyRecipes";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/signup" exact element={<SignUp />} />
         <Route path="/signin" exact element={<SignIn />} />
         <Route path="/create-recipe/" exact element={<Recipe />} />
-        <Route path="/fav-recipe" exact element={<FavRecipe />} />
+        <Route path="/fav-recipe/" exact element={<FavRecipe />} />
+        <Route path="/my-recipes" exact element={<MyRecipes />} />
         <Route path="/update-recipe/:recipeId" exact element={<UpdateRecipe />} />
       </Routes>
     </div>

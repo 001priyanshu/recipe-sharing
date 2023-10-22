@@ -35,6 +35,9 @@ const NavBar = () => {
               <li>
                 <Link to="/fav-recipe">My Favourite</Link>
               </li>
+              <li>
+                <Link to="/my-recipes">My Recipes</Link>
+              </li>
               <li onClick={handleLogOut}>
                 <Link>Log Out</Link>
               </li>
