@@ -4,10 +4,10 @@ import NavBar from "./components/navbar/navbar";
 import SignIn from "./pages/Authentication/SignIn";
 import SignUp from "./pages/Authentication/SignUp";
 import { Landing } from "./pages/Home/Landing";
-import Recipe from "./pages/CreateRecipe/Recipe";
-import FavRecipe from "./pages/CreateRecipe/FavRecipe";
+import NewRecipe from "./pages/Recipe/NewRecipe";
+import FavRecipe from "./pages/Recipe/FavRecipe";
 import UpdateRecipe from "./components/Recipe/UpdateRecipe";
-import MyRecipes from "./components/Recipe/MyRecipes";
+import MyRecipe from "./pages/Recipe/MyRecipe";
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
         <Route path="/" exact element={<Landing />} />
         <Route path="/signup" exact element={<SignUp />} />
         <Route path="/signin" exact element={<SignIn />} />
-        <Route path="/create-recipe/" exact element={<Recipe />} />
+        <Route path="/create-recipe/" exact element={<NewRecipe />} />
         <Route path="/fav-recipe/" exact element={<FavRecipe />} />
-        <Route path="/my-recipes" exact element={<MyRecipes />} />
+        <Route path="/my-recipes" exact element={<MyRecipe />} />
         <Route path="/update-recipe/:recipeId" exact element={<UpdateRecipe />} />
       </Routes>
     </div>

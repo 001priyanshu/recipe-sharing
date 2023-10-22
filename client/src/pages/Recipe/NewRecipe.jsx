@@ -1,8 +1,8 @@
 import React from "react";
 import CreateNew from "../../components/Recipe/CreateNew";
 
-const Recipe = () => {
+const NewRecipe = () => {
   return <CreateNew />;
 };
 
-export default Recipe;
+export default NewRecipe;
